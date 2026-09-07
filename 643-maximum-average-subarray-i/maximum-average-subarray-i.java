@@ -4,8 +4,8 @@ class Solution {
         int maxa=0;
         for(int i=0;i<k;i++){
             sum+=nums[i];
-            maxa=sum;
         }
+        maxa=sum;
         for(int r=k;r<nums.length;r++){
         sum+=nums[r]-nums[l++];
         maxa=Math.max(maxa,sum);
